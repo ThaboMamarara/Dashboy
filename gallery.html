@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboy - Gallery</title>
+    <style>
+        body {
+            font-family: Bahnschrift, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000; /* Black background */
+            color: #fff; /* White text */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Set the minimum height of the body to the full viewport height */
+        }
+
+        section {
+            flex: 1; /* Expand and take available space */
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box; /* Ensure padding doesn't affect the total height */
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            max-width: 300px; /* Adjust the max width of the logo */
+            margin-bottom: 20px; /* Add margin below the logo */
+        }
+
+        .navigation-tab {
+            margin-top: 10px;
+        }
+
+        .navigation-tab a {
+            color: #ff6a00; /* White text */
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            padding: 10px 20px;
+        }
+
+        .gallery-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 900px; /* Adjust based on your design */
+            margin: 0 auto;
+        }
+
+        .gallery-image {
+            flex-basis: calc(33.33% - 10px); /* Adjust the width and margin based on your design */
+            margin-bottom: 20px;
+        }
+
+        .gallery-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px; /* Add a border radius for rounded corners */
+        }
+
+        p {
+            line-height: 1.6;
+            max-width: 600px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #ff6a00; /* Dark background color */
+            color: #010101; /* White text */
+            text-align: left;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <img class="logo" src="gallery.jpg" alt="Logo"> <!-- Add the actual file path for your logo -->
+        <div class="navigation-tab">
+            <a href="index.html">Home</a>
+            <a href="covers.html">Covers</a>
+        </div>
+
+        <p>
+            Explore a collection of captivating images showcasing Dashboy's journey and experiences. 
+        </p>
+
+        <div class="gallery-container">
+            <div class="gallery-image">
+                <img src="dash.jpg" alt="Dashboy Image 1">
+            </div>
+            <div class="gallery-image">
+                <img src="dash1.jpg" alt="Dashboy Image 2">
+            </div>
+            <div class="gallery-image">
+                <img src="dash2.jpg" alt="Dashboy Image 3">
+            </div>
+            <div class="gallery-image">
+                <img src="dash3.jpg" alt="Dashboy Image 4">
+            </div>
+            <div class="gallery-image">
+                <img src="dash4.jpg" alt="Dashboy Image 5">
+            </div>
+            <div class="gallery-image">
+                <img src="dash6.jpg" alt="Dashboy Image 6">
+            </div>
+            <div class="gallery-image">
+                <img src="dash 7.jpg" alt="Dashboy Image 7">
+            </div>
+            <div class="gallery-image">
+                <img src="dash8.jpg" alt="Dashboy Image 8">
+            </div>
+            <div class="gallery-image">
+                <img src="dash9.jpg" alt="Dashboy Image 9">
+            </div>
+            <!-- Add more images as needed -->
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 TM Global. All rights reserved.</p>
+        <p>Bookings @ dashboytheplugofficial@gmail.com</p>
+    </footer>
+
+</body>
+</html>

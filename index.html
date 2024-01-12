@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboy - Rapper/Musician</title>
+    <style>
+        body {
+            font-family: Bahnschrift, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000; /* Black background */
+            color: #fff; /* White text */
+        }
+
+        header {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 400px; /* Set the max width for the logo */
+            height: auto;
+        }
+
+        header h1 {
+            margin: 10px 0 0; /* Adjust margin for the heading */
+            color: #fff; /* Set text color for the rapper's name */
+        }
+
+        nav {
+            text-align: center;
+            background-color: #000000; /* Dark grey background for the tabs */
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #ff6a00;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #555; /* Darker background on hover */
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #000000; /* Dark grey background */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #fff;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .platform-logos {
+            text-align: center; /* Center-align the logos */
+            margin-top: 20px; /* Add space above the logos */
+        }
+
+        .platform-logos img {
+            max-width: 100px; /* Adjust the size of the logos */
+            display: inline-block; /* Make logos inline */
+            margin-right: 40px; /* Add space between logos */
+        }
+        footer {
+            background-color: #ff6a00;
+            color: #000000;
+            text-align: left;
+            padding: 0.4em;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+      
+        .curved-section {
+            border-radius: 20px; /* Adjust the border-radius for curved edges */
+            overflow: hidden; /* Ensure content doesn't overflow beyond curved edges */
+            background-color: #ff6a00; /* Adjust the background color */
+            margin: 20px auto 150px; /* Center the block horizontally, add margin-top, and increase margin-bottom */
+            max-width: 450px; /* Set a maximum width for better readability, adjust as needed */
+        }
+
+        .curved-section .content {
+            padding: 20px; /* Adjust the padding as needed */
+            box-sizing: border-box; /* Ensure padding is included in the total width */
+            text-align: center; /* Adjust text alignment */
+            color: #000000; /* Adjust text color */
+        }
+       
+        .covers-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            overflow-x: auto; /* Add horizontal scrolling for smaller screens */
+            margin: 20px 0;
+        }
+
+        .cover {
+            flex: 0 0 auto;
+            width: 200px; /* Set a specific width for each cover */
+            height: 200px; /* Set a specific height for each cover */
+            margin-right: 10px; /* Add some margin between covers */
+            overflow: hidden;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .cover a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .gallery-section {
+            max-width: 800px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        .gallery-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .gallery-image {
+            flex: 0 0 calc(33.33% - 20px);
+            overflow: hidden;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .gallery-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .gallery-image:hover img {
+            transform: scale(1.1);
+        }
+
+    </style>
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Replace "logo.jpg" with the actual file path for your logo -->
+        <img src="logo.jpg" alt="Logo">
+        <h1></h1> <!-- Add the rapper's name here -->
+        <!-- Add any additional header content or styling as needed -->
+    </header>
+
+    <nav>
+        <a href="covers.html">Covers</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <section>
+        <h2>Ke Mang Dashboy</h2>
+        <p>
+            Welcome to my official website! I'm Dashboy, a passionate rapper/musician with a unique style that blends various genres. 
+            I bring a different type of sound into the game, infusing hip hop trap, Lofi with with Xitsonga(my home languages)
+        </p>
+
+        <h2>Music on Platforms</h2>
+        <p>
+            Check out my latest tracks on:
+           <!-- <br>
+            <a href="https://open.spotify.com/artist/your-artist-id" target="_blank">Spotify</a>,
+            <a href="https://music.apple.com/your-artist-id" target="_blank">Apple Music</a>,
+            <a href="https://www.youtube.com/user/your-channel-id" target="_blank">YouTube</a>
+             -->
+        </p>
+
+        <!-- Platform logos linking to your pages -->
+        <div class="platform-logos">
+            <a href="https://open.spotify.com/artist/0LqZ6rdd9zJNVfmA5v54HM?si=cJJ2lYj4T9SK9IjnfRJShg" target="_blank">
+                <img src="spotify.png" alt="Spotify Logo">
+            </a>
+            <a href="https://music.apple.com/us/artist/dashboytheplug/1647171616" target="_blank">
+                <img src="apple.png" alt="Apple Music Logo">
+            </a>
+            <a href="http://www.youtube.com/@dashboytheplugTV" target="_blank">
+                <img src="youtube.jpg" alt="YouTube Logo">
+            </a>
+        </div>
+
+        <h2></h2>
+    </section>
+
+    <section class="covers-section">
+        <h2>Projects</h2>
+
+        <div class="covers-container">
+            <!-- Include your covers from covers.html -->
+            <div class="cover">
+                <a href="song1.html">
+                    <img src="cover1.jpg" alt="Cover 1">
+                </a>
+            </div>
+            <div class="cover">
+                <a href="song2.html">
+                    <img src="cover5.jpg" alt="Cover 2">
+                </a>
+            </div>
+            <div class="cover">
+                <a href="song3.html">
+                    <img src="cover6.jpg" alt="Cover 3">
+                </a>
+            </div>
+            <!-- Add more covers as needed -->
+        </div>
+    </section>
+
+    <!-- Add additional sections for events, photos, etc. -->
+    <section class="curved-section">
+        <div class="content">
+            <h2></h2>
+            <p>Bookings @ dashboytheplugofficial@gmail.com</p>
+
+            <p>Industry Quality Beats available from R300</p>
+                
+            <p>Mix and Mastering Services Available from R500</p>
+            </p>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <h2></h2>
+
+        <div class="gallery-container">
+            <div class="gallery-image" >
+                <img src="dash.jpg" alt="Image 1">
+            </div>
+            <div class="gallery-image" >
+                <img src="dash1.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-image" >
+                <img src="dash2.jpg" alt="Image 3">
+            </div>
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+   
+
+    <footer>
+
+        <p>&copy; 2023 TM Global. All rights reserved.</p>
+        <p>Bookings @ dashboytheplugofficial@gmail.com</p>
+        
+    </footer>
+
+    
+
+</body>
+</html>

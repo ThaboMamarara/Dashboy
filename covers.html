@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboy - Covers</title>
+    <style>
+        body {
+            font-family: Bahnschrift, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #fff;
+        }
+
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+        }
+        .logo {
+            max-width: 300px; /* Adjust the max width of the logo */
+            margin-bottom: 20px; /* Add margin below the logo */
+            margin-top: 30px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .navigation-tab {
+            margin-top: 10px;
+        }
+
+        .navigation-tab a {
+            color: #ff6a00;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            padding: 10px 20px;
+        }
+
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .album-cover {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .album-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .album-name {
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 5px;
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        p {
+            line-height: 1.6;
+            max-width: 600px;
+        }
+
+        .footer {
+            background-color: #ff6a00;
+            color: #000000;
+            text-align: justify;
+            padding: 0.4em;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <img class="logo" src="cover.jpg" alt="Logo"> <!-- Add the actual file path for your logo -->
+        <div class="navigation-tab">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+
+        <p>
+            Explore a collection of captivating covers by Dashboy, each infused with a unique style that showcases the
+            diversity of musical influences.
+        </p>
+
+        <div class="gallery-container">
+            <!-- Album Cover 1 -->
+            <div class="album-cover">
+                <a href="https://open.spotify.com/album/5qSudbI1hgducrzJAdZZFD?si=fwYlrRK5QRCX4c3kCjVxtw">
+                    <img src="cover1.jpg" alt="Album Cover 1">
+                </a>
+                <p class="album-name">Values & Standards</p>
+            </div>
+
+            <!-- Album Cover 2 -->
+            <div class="album-cover">
+                <a href="https://on.soundcloud.com/PHTAoXov2qAv1RD58">
+                    <img src="cover2.jpg" alt="Album Cover 2">
+                </a>
+                <p class="album-name">SUMMERTIME</p>
+            </div>
+            <!-- Album Cover 3 -->
+            <div class="album-cover">
+                <a href="https://open.spotify.com/album/1Sh6BzJWWprLuDZd0PdIL6?si=-MxmJxmzTq2ocHnDtwwiVg">
+                    <img src="cover3.jpg" alt="Album Cover 3">
+                </a>
+                <p class="album-name">Magayisa</p>
+            </div>
+
+            <!-- Album Cover 4 -->
+            <div class="album-cover">
+                <a href="https://youtu.be/H96lN7MIP7s?si=vG5t2NEG24YsKc4-">
+                    <img src="cover4.jpg" alt="Album Cover 4">
+                </a>
+                <p class="album-name">The Star Was Born</p>
+            </div>
+            <!-- Album Cover 5 -->
+            <div class="album-cover">
+                <a href="https://on.soundcloud.com/SShZA2iQp7sSXgYF8">
+                    <img src="cover5.jpg" alt="Album Cover 5">
+                </a>
+                <p class="album-name">Pick A Side</p>
+            </div>
+
+            <!-- Album Cover 6 -->
+            <div class="album-cover">
+                <a href="https://on.soundcloud.com/rHUppRpThdZHiTvf6">
+                    <img src="cover6.jpg" alt="Album Cover 6">
+                </a>
+                <p class="album-name">DIVA</p>
+            </div>
+
+            <!-- Album Cover 7 -->
+            <div class="album-cover">
+                <a href="https://on.soundcloud.com/XX1B8mww5QxQXGhx7">
+                    <img src="cover7.jpg" alt="Album Cover 7">
+                </a>
+                <p class="album-name">Cina</p>
+            </div>
+            <!-- Album Cover 8 -->
+            <div class="album-cover">
+                <a href="https://open.spotify.com/album/3LNLS0pcC28aMRnapzyNX5?si=dWlX-heFQCi6eHm23V5jdw">
+                    <img src="cover8.jpg" alt="Album Cover 8">
+                </a>
+                <p class="album-name">P.U.R.E</p>
+            </div>
+
+            <!-- Album Cover 9 -->
+            <div class="album-cover">
+                <a href="https://open.spotify.com/track/20oAa7KD5I77iGVoEXOJgK?si=D5Y7iUI2SLGi-pxymRM0Jg">
+                    <img src="cover9.jpg" alt="Album Cover 9">
+                </a>
+                <p class="album-name">Peace Street</p>
+            </div>
+
+            <!-- Add more album covers as needed -->
+        </div>
+    </section>
+
+    <div class="footer">
+        <p> &copy; 2023 TM Global. All rights reserved.</p>
+        <p>Bookings @ dashboytheplugofficial@gmail.com</p>
+    </div>
+
+</body>
+
+</html>
